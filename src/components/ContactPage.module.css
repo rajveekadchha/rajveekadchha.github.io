@@ -1,0 +1,18 @@
+.formStyle {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    padding-top: 3rem;
+    max-width: 800px;
+}
+
+.divider {
+    width: 3rem;
+    height: 5px;
+    background-color: rgb(101, 157, 189);
+    position: absolute;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    top: calc(100% + 81rem);
+    left: 50%;
+}

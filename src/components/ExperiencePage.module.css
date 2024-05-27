@@ -1,0 +1,36 @@
+.divider {
+    width: 3rem;
+    height: 5px;
+    background-color: rgb(101, 157, 189);
+    position: absolute;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    top: calc(100% + 43rem);
+    left: 50%;
+}
+
+.t {
+    color: #659DBD;
+    padding-top: 0.5rem;
+    margin-inline: 2rem;
+}
+
+.antCard {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* YourStylesheet.module.css */
+.customStyle {
+    margin-top: 2rem;
+    /* Example style */
+}
+
+.motionCard {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+}
