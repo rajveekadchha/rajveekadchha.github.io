@@ -1,23 +1,21 @@
-import {
-  Layout,
-  Menu,
-  Avatar,
-  Space,
-  Button,
-  FloatButton,
-  Drawer,
-  // Row,
-  // Col,
-} from "antd";
+import { Layout, Menu, Avatar, Space, Button, FloatButton, Drawer } from "antd";
 import {
   LinkedinFilled,
   GithubFilled,
   MenuOutlined,
   MailOutlined,
 } from "@ant-design/icons";
-
-import logo1 from "../assets/logo1.JPG";
-// import myPhoto from "../assets/my.jpg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faBootstrap,
+  faCss3,
+  faHtml5,
+  faPython,
+  faReact,
+} from "@fortawesome/free-brands-svg-icons";
+import { faJs } from "@fortawesome/free-brands-svg-icons";
+import logo from "../assets/ttf.jpg";
+// import logo from "../assets/headerImg.jpg";
 import backgroundImg from "../assets/back.jpg";
 import styles from "../components/HomePage.module.css";
 import AboutPage from "./AboutPage";
@@ -26,6 +24,7 @@ import ContactPage from "./ContactPage";
 import { useState, useEffect } from "react";
 import AnimatedText from "./AnimatedText";
 import TypingText from "./TypingText";
+import { faShopify } from "@fortawesome/free-brands-svg-icons/faShopify";
 
 const { Header } = Layout;
 
@@ -40,13 +39,13 @@ export default function HomePage() {
       section.scrollIntoView({ behavior: "smooth" });
     }
   };
-  const handleUrl = (e) => {
-    const sectionId = e.currentTarget.getAttribute("data-key");
-    const section = document.getElementById(sectionId);
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-    }
-  };
+  // const handleUrl = (e) => {
+  //   const sectionId = e.currentTarget.getAttribute("data-key");
+  //   const section = document.getElementById(sectionId);
+  //   if (section) {
+  //     section.scrollIntoView({ behavior: "smooth" });
+  //   }
+  // };
 
   const [visible, setVisible] = useState(false);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -93,7 +92,7 @@ export default function HomePage() {
           }}
         >
           <Space>
-            <Avatar size={84} src={logo1} />
+            <Avatar size={84} src={logo} />
             <div style={{ fontSize: "74", fontWeight: "1000", color: "white" }}>
               RAJVEE KADCHHA
             </div>
@@ -147,30 +146,24 @@ export default function HomePage() {
             paddingBottom: "100px",
           }}
         >
-          {/* <Row justify="center">
-            <Col xs={6} sm={6} md={2} lg={2}></Col>
-            <Col xs={12} sm={12} md={6} lg={6} style={{ display: "flex" }}>
-              <div className={styles.parentComponent}>
-                <img
-                  src={myPhoto}
-                  alt="Profile"
-                  className={styles.profilePhoto}
-                />
-              </div>
-            </Col>
-            <Col xs={6} sm={6} md={2} lg={2}></Col>
-            <Col xs={24} sm={24} md={14} lg={14} className={styles.intro}> */}
           <h1 className={styles.title}>
             {/* <TypingText text="HEY, I'M RAJVEE KADCHHA" /> */}
             <AnimatedText text="HEY, I'M RAJVEE KADCHHA" />
           </h1>
           <h2 className={styles.text}>
-            <TypingText
-              text="UI Developer Dedicated to Creating User-Friendly Interfaces with a
-            Focus on Design and Functionality"
-            />
+            <TypingText text="I love blending creativity with code to craft stunning, user-friendly web experiences" />
           </h2>
-          <Button
+          {/* <div style={{ display: "flex", gap: "20px", marginBlock: "0.5rem" }}>
+            <FontAwesomeIcon icon={faReact} size="4x" color="#61DAFB" />
+            <FontAwesomeIcon icon={faJs} size="4x" color="#f0db4f" />
+            <FontAwesomeIcon icon={faHtml5} size="4x" color="#e34c26" />
+            <FontAwesomeIcon icon={faCss3} size="4x" color="#2965f1" />
+            <FontAwesomeIcon icon={faPython} size="4x" color="#ffd43b" />
+            <FontAwesomeIcon icon={faBootstrap} size="4x" color="#563d7c" />
+            <FontAwesomeIcon icon={faShopify} size="4x" color="#64943e" />
+          </div> */}
+
+          {/* <Button
             type="primary"
             size="large"
             data-key="experience"
@@ -179,9 +172,8 @@ export default function HomePage() {
             style={{ background: "#659DBD", marginTop: "20px" }}
           >
             EXPERIENCE
-          </Button>
-          {/* </Col>
-          </Row> */}
+          </Button> */}
+
           <FloatButton.Group
             shape="square"
             size="large"

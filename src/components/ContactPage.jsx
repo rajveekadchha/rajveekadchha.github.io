@@ -111,6 +111,7 @@ export default function ContactPage() {
                 type="primary"
                 htmlType="submit"
                 formAction="mailto:rajveedkadchha@gmail.com"
+                style={{ background: "#659DBD" }}
               >
                 Submit
               </Button>

@@ -22,13 +22,15 @@ export default function AboutPage() {
         <Col xs={24} sm={24} md={24} lg={12}>
           <h2>Get to know me!</h2>
           <p className={styles.subSubText}>
-            I am UI Developer Dedicated to Creating User-Friendly Interfaces
-            with a Focus on Design and Functionality. Check out my work on
-            Projects section.
+            I'm a 25-year-old currently based in Bangalore, indulging in
+            authentic dosas and leisurely strolls through Cubbon Park. You'll
+            often catch me enjoying reruns of "Friends" and "Modern Family,"
+            along with my passion for cooking, savoring good food, and
+            occasionally delving into a good book.
           </p>
           <p className={styles.subSubText}>
-            I'm open to Job opportunities where I can contribute, learn and
-            grow. If you have a good opportunity that matches my skills and
+            I'm open to FrontEnd Job opportunities where I can contribute, learn
+            and grow. If you have a good opportunity that matches my skills and
             experience then please contact me.
           </p>
 
@@ -44,6 +46,7 @@ export default function AboutPage() {
           </Button>
         </Col>
         <Col xs={24} sm={24} md={24} lg={12}>
+          <h2>My Skills</h2>
           <div className={styles.skills}>
             <div className={styles.skill}>React</div>
             <div className={styles.skill}>JavaScript</div>
