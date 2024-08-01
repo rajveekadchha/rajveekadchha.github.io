@@ -1,10 +1,12 @@
 import "./App.css";
-import HomePage from "./components/HomePage";
-
+import CustomCursor from "./Components/CustomCursor";
+import Home from "./Components/HomePage";
+import "./fontAwesome";
 function App() {
   return (
     <div className="App">
-      <HomePage />
+      <CustomCursor />
+      <Home />
     </div>
   );
 }
