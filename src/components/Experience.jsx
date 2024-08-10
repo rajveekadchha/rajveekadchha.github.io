@@ -5,7 +5,7 @@ const timelineData = [
   {
     type: "experience",
     date: "2021-2023",
-    title: "UI/UX Designer",
+    title: "Software Engineer",
     description: [
       `* Revamped Multi-Country Pricing (MCP) for Shopify 2.0, boosting multinational business profits by 40% and reducing setup
 time by nearly 80% by eliminating theme dependencies.`,
