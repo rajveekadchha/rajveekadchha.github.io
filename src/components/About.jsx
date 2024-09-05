@@ -18,22 +18,25 @@ export default function About() {
         <div className="w-full md:w-1/2 md:pl-8 text-justify">
           <h1 className="text-4xl font-bold mb-4">So, who am I?</h1>
           <p className="text-gray-700 mb-4">
-            I am a 25-year-old currently residing in Bangalore, where I relish
+            I am a 25-year-old currently residing in Bangalore,with 3 years of
+            experience as Frontend development.
+            {/* where I relish
             authentic dosas and take leisurely strolls through Cubbon Park. In
             my downtime, you’ll often find me rewatching episodes of{" "}
             <i>Big bang theory</i> and <i>Modern Family</i>, indulging in my
             passion for cooking, savoring good food, or delving into a
-            captivating book.
+            captivating book. */}
           </p>
           <p className="text-gray-700 mb-4">
             I hold a degree in ICT engineering from Ahmedabad University. My
             professional journey includes extensive experience in building
             Shopify apps, enhancing site performance, and achieving impressive
             performance scores above 80. I have also created an app in Wix using
-            blocks. Notably, I developed a React app for Thinkific.
+            blocks. Notably, I developed a React app for Thinkific. Also, I am
+            certified Wix Velo developer.
           </p>
           <p className="text-gray-700 mb-4">
-            I am seeking FrontEnd job opportunities where I can apply my skills,
+            I am seeking Frontend job opportunities where I can apply my skills,
             continue to learn, and grow. If you have a position that aligns with
             my expertise and experience, please reach out to me.
           </p>

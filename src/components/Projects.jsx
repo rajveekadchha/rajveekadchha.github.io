@@ -2,14 +2,23 @@
 import React, { useState } from "react";
 import match from "../assets/card_match.png";
 import weather from "../assets/weather.png";
+import price from "../assets/Price_bundle.png";
+import dashboard from "../assets/dashboard.png";
 import Skillset from "./Skillset";
 const projectData = [
   {
-    title: "Weather App",
-    description: `This is a weather app. Which shows data of 7 days, you can search and get temperature, humidity, wind speed of any particular city`,
-    technologies: ["React", "Material UI", "Typescript"],
-    link: "https://github.com/rajveekadchha/weather-app",
-    image: weather,
+    title: "Dashboard Page",
+    description: `Built a responsive admin dashboard with order tracking, revenue insights, and customer feedback. Features include real-time activity charts, key metrics like profit and cancellations, and intuitive navigation for managing orders, goals, popular dishes, and menus."`,
+    technologies: ["React", "Tailwind", "Typescript", , "JavaScript"],
+    link: "https://dashboard-demo-rajvee.netlify.app/",
+    image: dashboard,
+  },
+  {
+    title: "Price Bundle app",
+    description: `Skeleton of app.This type of bundles usually increases items per order and forces customer to buy more.`,
+    technologies: ["HTML", "CSS", "JavaScript"],
+    link: "https://rajveekadchha.github.io/price-bundle/",
+    image: price,
   },
   {
     title: "Card Matching App",
@@ -17,6 +26,13 @@ const projectData = [
     technologies: ["React", "Ant Design"],
     link: "https://github.com/rajveekadchha/matching-game",
     image: match,
+  },
+  {
+    title: "Weather App",
+    description: `This is a weather app. Which shows data of 7 days, you can search and get temperature, humidity, wind speed of any particular city`,
+    technologies: ["React", "Material UI", "Typescript"],
+    link: "https://github.com/rajveekadchha/weather-app",
+    image: weather,
   },
 ];
 
@@ -42,7 +58,7 @@ export default function Projects() {
             <img
               src={project.image}
               alt={project.title}
-              className="w-full h-40 object-cover rounded-t-lg mb-4"
+              className="w-full h-80 object-cover rounded-t-lg mb-4"
             />
             <h2 className="text-2xl font-bold mb-2">{project.title}</h2>
             <p className="mb-4">
