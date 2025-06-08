@@ -64,7 +64,7 @@ export default function Skillset() {
   return (
     <div className=" py-6">
       <div className="w-4/5 mx-auto">
-        {/* <h1 className="text-4xl font-bold mb-8">Skills</h1> */}
+        <h3 className="text-4xl font-bold mb-8">Skills</h3>
         <div className="mb-8">
           <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-7 gap-8">
             {skills.frontend.map((skill, index) => (

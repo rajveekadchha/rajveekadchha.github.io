@@ -1,11 +1,11 @@
 import "./App.css";
-import CustomCursor from "./Components/CustomCursor";
-import Home from "./Components/HomePage";
+import CustomCursor from "./components/CustomCursor"
+import Home from "./components/HomePage";
 import "./fontAwesome";
 function App() {
   return (
     <div className="App">
-      <CustomCursor />
+      <CustomCursor/>
       <Home />
     </div>
   );
