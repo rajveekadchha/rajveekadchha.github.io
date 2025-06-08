@@ -4,8 +4,18 @@ import React from "react";
 const timelineData = [
   {
     type: "experience",
+    date: "2025",
+    title: "Bibal AI - Software Developer",
+    description: [
+      `* Worked on a client-facing project, developing responsive and scalable UIs using React, TypeScript, JavaScript, CSS, MUI, and JointJS for rendering dynamic network graphs.`,
+      `*Currently enhancing an AI interview platform, including implementing logic to efficiently handle long and heavy video files, and refining UI workflows for a seamless user experience ,improving performance by more than 50%.`,
+      `* Improved the company website's UI and optimized its performance to ensure faster load times and better responsiveness, improving pagespeed score by 30 units in mobile and desktop.`,
+    ],
+  },
+  {
+    type: "experience",
     date: "2021-2023",
-    title: "Software Engineer",
+    title: "MLVeda - Software Engineer",
     description: [
       `* Revamped Multi-Country Pricing (MCP) for Shopify 2.0, boosting multinational business profits by 40% and reducing setup
 time by nearly 80% by eliminating theme dependencies.`,
