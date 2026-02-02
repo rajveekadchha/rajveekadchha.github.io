@@ -4,6 +4,7 @@ import match from "../assets/match.png";
 import weather from "../assets/weather.png";
 import food from "../assets/food-app.png";
 import fleet from "../assets/fleet.png";
+import coffee from "../assets/Coffee.png";
 
 export type Project = {
   title: string;
@@ -21,6 +22,14 @@ export const projects: Project[] = [
     technologies: ["React", "Tailwind", "TypeScript"],
     link: "https://smart-food-recommendations.netlify.app/",
     image: food,
+  },
+   {
+    title: "Creme Coffee shop",
+    description:
+      "Designed and built a responsive coffee brand website in Framer, focusing on typography, layout systems, and subtle interactions.",
+    technologies: ["Framer"],
+    link: "https://creme-coffee.framer.website/",
+    image: coffee,
   },
   {
     title: "Fleet Tracker App",
