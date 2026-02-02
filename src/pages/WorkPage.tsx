@@ -5,11 +5,9 @@ export default function WorkPage() {
   return (
     <div className="mx-auto w-full max-w-7xl px-10 py-12">
       {/* EXPERIENCE */}
-   
 
       <section className="mb-20">
         <div className="mb-8">
-         
           <h2 className="mt-2 text-3xl font-bold tracking-tight text-black">
             Where I’ve worked
           </h2>
@@ -26,13 +24,9 @@ export default function WorkPage() {
                   <div className="text-lg font-semibold text-black">
                     {exp.role}
                   </div>
-                  <div className="text-sm text-black/70">
-                    {exp.company}
-                  </div>
+                  <div className="text-sm text-black/70">{exp.company}</div>
                 </div>
-                <div className="text-sm text-black/50">
-                  {exp.period}
-                </div>
+                <div className="text-sm text-black/50">{exp.period}</div>
               </div>
 
               <p className="mt-4 text-sm leading-relaxed text-black/70">
@@ -50,69 +44,8 @@ export default function WorkPage() {
       </section>
 
       {/* PROJECTS */}
-<section>
-  <div className="mb-8">
-    <div className="text-xs font-semibold tracking-wider text-black/50">
-      PROJECTS
-    </div>
-    <h2 className="mt-2 text-3xl font-bold tracking-tight text-black">
-      Things I’ve built
-    </h2>
-  </div>
-
-  {/* force 2-column rhythm */}
-  <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-2">
-    {projects.map((p) => (
-      <article
-        key={p.title}
-        className="group overflow-hidden rounded-[24px] border border-black/10 bg-white/60 backdrop-blur-md transition hover:-translate-y-[2px] hover:shadow-[0_18px_60px_rgba(0,0,0,0.10)]"
-      >
-        {/* image */}
-        <div className="overflow-hidden border-b border-black/10 bg-white/40">
-          <img
-            src={p.image}
-            alt={p.title}
-            className="h-44 w-full object-cover transition-transform duration-300 group-hover:scale-[1.03]"
-          />
-        </div>
-
-        {/* content */}
-        <div className="p-5">
-          <h3 className="text-lg font-semibold text-black">
-            {p.title}
-          </h3>
-
-          <p className="mt-2 line-clamp-2 text-sm leading-relaxed text-black/70">
-            {p.description}
-          </p>
-
-          <div className="mt-3 flex flex-wrap gap-2">
-            {p.technologies.slice(0, 4).map((t) => (
-              <span
-                key={t}
-                className="rounded-full border border-black/10 bg-white/60 px-3 py-1 text-[11px] text-black/70"
-              >
-                {t}
-              </span>
-            ))}
-          </div>
-
-          <a
-            href={p.link}
-            target="_blank"
-            rel="noreferrer"
-            className="mt-4 inline-block text-sm font-medium text-black/80 underline-offset-4 hover:underline"
-          >
-            View project →
-          </a>
-        </div>
-      </article>
-    ))}
-  </div>
-</section>
-
-      {/* <section>
-        <div className="mb-[32px]">
+      <section>
+        <div className="mb-8">
           <div className="text-xs font-semibold tracking-wider text-black/50">
             PROJECTS
           </div>
@@ -121,51 +54,54 @@ export default function WorkPage() {
           </h2>
         </div>
 
-        <div className="grid gap-6 md:grid-cols-2">
+        {/* force 2-column rhythm */}
+        <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-2">
           {projects.map((p) => (
             <article
               key={p.title}
-              className="group rounded-[28px] border border-black/10 bg-white/60 p-6 backdrop-blur-md transition hover:-translate-y-[2px] hover:shadow-[0_18px_60px_rgba(0,0,0,0.12)]"
+              className="group overflow-hidden rounded-[24px] border border-black/10 bg-white/60 backdrop-blur-md transition hover:-translate-y-[2px] hover:shadow-[0_18px_60px_rgba(0,0,0,0.10)]"
             >
-              <div className="overflow-hidden rounded-[18px] border border-black/10 bg-white/40">
+              {/* image */}
+              <div className="overflow-hidden border-b border-black/10 bg-white/40">
                 <img
                   src={p.image}
                   alt={p.title}
-                  className="h-52 w-full object-cover transition-transform duration-300 group-hover:scale-[1.02]"
+                  className=" w-full  transition-transform duration-300 group-hover:scale-[1.03]"
                 />
               </div>
 
-              <h3 className="mt-5 text-xl font-semibold text-black">
-                {p.title}
-              </h3>
+              {/* content */}
+              <div className="p-5">
+                <h3 className="text-lg font-semibold text-black">{p.title}</h3>
 
-              <p className="mt-2 text-sm leading-relaxed text-black/70">
-                {p.description}
-              </p>
+                <p className="mt-2 line-clamp-2 text-sm leading-relaxed text-black/70">
+                  {p.description}
+                </p>
 
-              <div className="mt-4 flex flex-wrap gap-2">
-                {p.technologies.map((t) => (
-                  <span
-                    key={t}
-                    className="rounded-full border border-black/10 bg-white/60 px-3 py-1 text-xs text-black/70"
-                  >
-                    {t}
-                  </span>
-                ))}
+                <div className="mt-3 flex flex-wrap gap-2">
+                  {p.technologies.slice(0, 4).map((t) => (
+                    <span
+                      key={t}
+                      className="rounded-full border border-black/10 bg-white/60 px-3 py-1 text-[11px] text-black/70"
+                    >
+                      {t}
+                    </span>
+                  ))}
+                </div>
+
+                <a
+                  href={p.link}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="mt-4 inline-block text-sm font-medium text-black/80 underline-offset-4 hover:underline"
+                >
+                  View project →
+                </a>
               </div>
-
-              <a
-                href={p.link}
-                target="_blank"
-                rel="noreferrer"
-                className="mt-5 inline-block text-sm font-medium text-black/80 underline-offset-4 hover:underline"
-              >
-                Open project →
-              </a>
             </article>
           ))}
         </div>
-      </section> */}
+      </section>
     </div>
   );
 }
