@@ -50,13 +50,13 @@
 //               </a>
 
 //               <a
-//                 href="https://www.instagram.com/chaotic_yet_exotic/"
+//                 href="https://www.instagram.com/chaotic_brews/"
 //                 target="_blank"
 //                 rel="noreferrer"
 //                 className="flex items-center justify-between rounded-[18px] border border-black/10 bg-white/55 px-5 py-4 text-sm text-black/80 hover:bg-white/80"
 //               >
 //                 <span>Instagram</span>
-//                 <span className="font-medium">@chaotic_yet_exotic</span>
+//                 <span className="font-medium">@chaotic_brews</span>
 //               </a>
 //             </div>
 //           </div>
