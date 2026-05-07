@@ -32,9 +32,29 @@ export default function AboutPage() {
                 <div className="flex items-center justify-between">
                   <span className="text-black/50">Focus</span>
                   <span className="font-medium text-black/80">
-                    Frontend (React, TypeScript, JavaScript)
+                    Frontend (React, NextJS, TypeScript, JavaScript)
                   </span>
                 </div>
+                <div className="flex items-center justify-between">
+            <span className="text-black/50">Experience</span>
+            <span className="font-medium text-black/80">3+ years</span>
+          </div>
+           <div className="flex items-center justify-between">
+            <span className="text-black/50">Currently building</span>
+            
+            <a
+              href="https://cyle-wecare.netlify.app/"
+              target="_blank"
+              rel="noreferrer"
+              className="font-medium text-black/80 underline decoration-black/20 underline-offset-4 hover:decoration-black/60"
+            >
+              Cycle ↗
+            </a>
+          </div>
+          <div className="flex items-center justify-between">
+            <span className="text-black/50">Open to work</span>
+            <span className="font-medium text-black/80">Yes</span>
+          </div>
               </div>
             </div>
 
@@ -50,7 +70,7 @@ export default function AboutPage() {
               </span>
 
               <span className="rounded-full border border-black/10 bg-white/50 px-3 py-2 text-xs text-black/70">
-                📸 Good sitcoms
+                📺 Good sitcoms
               </span>
             </div>
           </div>
@@ -103,7 +123,7 @@ export default function AboutPage() {
                 rel="noreferrer"
                 className="rounded-full border border-black/10 bg-white/60 px-4 py-2 text-sm font-semibold text-black/80 hover:bg-white/80"
               >
-                Instagram
+                Instagram(@chaotic_brews)
               </a>
 
               <a

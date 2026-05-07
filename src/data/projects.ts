@@ -5,6 +5,8 @@ import weather from "../assets/weather.png";
 import food from "../assets/food-app.png";
 import fleet from "../assets/fleet.png";
 import coffee from "../assets/Coffee.png";
+import cycle from "../assets/cycle.png";
+import photographyInvoice from "../assets/photographyinvoice.png";
 
 export type Project = {
   title: string;
@@ -15,6 +17,22 @@ export type Project = {
 };
 
 export const projects: Project[] = [
+  {
+  title: "Cycle",
+  description:
+    "A period-care agent that knows your cycle, preps your Instamart cart with your usual brands, and reminds you 2 days early on WhatsApp. Designed a calm, editorial UI with a 100-founding-member waitlist.",
+  technologies: ["Next.js", "TypeScript", "Tailwind", "Supabase"],
+  link: "https://cyle-wecare.netlify.app/",
+  image: cycle,
+},
+{
+  title: "Photography Invoice",
+  description:
+    "A quotation and invoice builder for photographers. Configure packages, add-ons, and client details to generate a clean, print-ready PDF quote.",
+  technologies: ["React","NextJS", "TypeScript", "Tailwind", "Vite"],
+  link: "",
+  image: photographyInvoice,
+},
   {
     title: "Smart Food Recommendation App",
     description:
