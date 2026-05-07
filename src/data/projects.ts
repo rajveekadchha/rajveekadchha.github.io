@@ -6,7 +6,7 @@ import food from "../assets/food-app.png";
 import fleet from "../assets/fleet.png";
 import coffee from "../assets/Coffee.png";
 import cycle from "../assets/cycle.png";
-import photographyInvoice from "../assets/photographyinvoice.png";
+import photographyInvoice from "../assets/photographyInvoice.png";
 
 export type Project = {
   title: string;
