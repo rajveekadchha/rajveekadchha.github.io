@@ -98,7 +98,7 @@ export default function AboutPage() {
             {/* Links */}
             <div className="mt-8 flex flex-wrap gap-3">
               <a
-                href="https://www.instagram.com/chaotic_yet_exotic"
+                href="https://www.instagram.com/chaotic_brews"
                 target="_blank"
                 rel="noreferrer"
                 className="rounded-full border border-black/10 bg-white/60 px-4 py-2 text-sm font-semibold text-black/80 hover:bg-white/80"
