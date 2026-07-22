@@ -7,6 +7,7 @@ import fleet from "../assets/fleet.png";
 import coffee from "../assets/Coffee.png";
 import cycle from "../assets/cycle.png";
 import photographyInvoice from "../assets/photographyInvoice.png";
+import collabTracker from "../assets/collab-tracker.png";
 
 export type Project = {
   title: string;
@@ -18,11 +19,19 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+  title: "Collab Tracker",
+  description:
+    "A dashboard to manage every brand collab pitch, deal, and deliverable in one place. Tracks reply rates, follow-ups due, and package status across active partnerships.",
+  technologies: ["React", "Tailwind","Supabase"],
+  link: "https://comfy-lolly-03a950.netlify.app/",
+  image: collabTracker,
+},
+  {
   title: "Cycle",
   description:
     "A period-care agent that knows your cycle, preps your Instamart cart with your usual brands, and reminds you 2 days early on WhatsApp. Designed a calm, editorial UI with a 100-founding-member waitlist.",
   technologies: ["Next.js", "TypeScript", "Tailwind", "Supabase"],
-  link: "https://cyle-wecare.netlify.app/",
+  link: "https://cycle-wecare.netlify.app/",
   image: cycle,
 },
 {
@@ -30,7 +39,7 @@ export const projects: Project[] = [
   description:
     "A quotation and invoice builder for photographers. Configure packages, add-ons, and client details to generate a clean, print-ready PDF quote.",
   technologies: ["React","NextJS", "TypeScript", "Tailwind", "Vite"],
-  link: "",
+  link: "https://photography-invoice-builder.netlify.app/",
   image: photographyInvoice,
 },
   {
