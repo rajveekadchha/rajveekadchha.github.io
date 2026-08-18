@@ -4,6 +4,7 @@ import HomePage from "./pages/HomePage";
 import WorkPage from "./pages/WorkPage";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
+import InstagramPage from "./pages/InstagramPage";
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
         <Route path="/work" element={<WorkPage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="/instagram" element={<InstagramPage />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Route>
     </Routes>

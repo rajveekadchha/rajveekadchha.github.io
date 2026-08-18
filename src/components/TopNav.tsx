@@ -5,6 +5,7 @@ const items = [
   // { to: "/play", label: "Playground" },
   { to: "/about", label: "About" },
   { to: "/contact", label: "Contact" },
+  { to: "/instagram", label: "Instagram" },
 ];
 
 export default function TopNav() {
