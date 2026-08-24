@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 
 const items = [
   { to: "/work", label: "Work" },
@@ -30,15 +30,21 @@ export default function TopNav() {
           </Link>
 
           {/* right — desktop */}
-          <div className="hidden items-center gap-[10px] md:flex">
+          <div className="hidden items-center gap-9 md:flex">
             {items.map((item) => (
-              <Link
+              <NavLink
                 key={item.to}
                 to={item.to}
-                className="text-[18px] font-medium text-black/70 no-underline hover:text-black transition-colors"
+                className={({ isActive }) =>
+                  `text-[18px] font-medium no-underline transition-colors ${
+                    isActive
+                      ? "text-black"
+                      : "text-black/55 hover:text-black/80"
+                  }`
+                }
               >
                 {item.label}
-              </Link>
+              </NavLink>
             ))}
           </div>
 
@@ -74,13 +80,17 @@ export default function TopNav() {
       >
         <div className="flex flex-col px-6 py-4">
           {items.map((item) => (
-            <Link
+            <NavLink
               key={item.to}
               to={item.to}
-              className="border-b border-black/10 py-3 text-[17px] font-medium text-black/70 no-underline last:border-0 hover:text-black transition-colors"
+              className={({ isActive }) =>
+                `border-b border-black/10 py-3 text-[17px] font-medium no-underline last:border-0 transition-colors ${
+                  isActive ? "text-black" : "text-black/55 hover:text-black/80"
+                }`
+              }
             >
               {item.label}
-            </Link>
+            </NavLink>
           ))}
         </div>
       </div>
