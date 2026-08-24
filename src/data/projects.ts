@@ -8,6 +8,7 @@ import coffee from "../assets/Coffee.png";
 import cycle from "../assets/cycle.png";
 import photographyInvoice from "../assets/photographyInvoice.png";
 import collabTracker from "../assets/collab-tracker.png";
+import squadifier from "../assets/squadifier.png";
 
 export type Project = {
   title: string;
@@ -18,6 +19,14 @@ export type Project = {
 };
 
 export const projects: Project[] = [
+  {
+  title: "Squadifier",
+  description:
+    "A BGMI qualifier scoreboard for competitive squads. Reads up to 15 match screenshots, tallies every point on the 10-point system, and turns the whole qualifier into a live, shareable page — no sign-in needed for teammates.",
+  technologies: ["Next.js", "TypeScript"],
+  link: "https://www.squadifier.com/",
+  image: squadifier,
+},
   {
   title: "Collab Tracker",
   description:
