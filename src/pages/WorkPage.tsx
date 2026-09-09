@@ -1,5 +1,6 @@
 import { experience } from "../data/experience";
 import { projects } from "../data/projects";
+import ProjectCard from "../components/ProjectCard";
 
 export default function WorkPage() {
   return (
@@ -57,48 +58,7 @@ export default function WorkPage() {
         {/* force 2-column rhythm */}
         <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-2">
           {projects.map((p) => (
-            <article
-              key={p.title}
-              className="group overflow-hidden rounded-[24px] border border-black/10 bg-white/60 backdrop-blur-md transition hover:-translate-y-[2px] hover:shadow-[0_18px_60px_rgba(0,0,0,0.10)]"
-            >
-              {/* image */}
-              <div className="overflow-hidden border-b border-black/10 bg-white/40">
-                <img
-                  src={p.image}
-                  alt={p.title}
-                  className=" w-full  transition-transform duration-300 group-hover:scale-[1.03]"
-                />
-              </div>
-
-              {/* content */}
-              <div className="p-5">
-                <h3 className="text-lg font-semibold text-black">{p.title}</h3>
-
-                <p className="mt-2 line-clamp-2 text-sm leading-relaxed text-black/70">
-                  {p.description}
-                </p>
-
-                <div className="mt-3 flex flex-wrap gap-2">
-                  {p.technologies.slice(0, 4).map((t) => (
-                    <span
-                      key={t}
-                      className="rounded-full border border-black/10 bg-white/60 px-3 py-1 text-[11px] text-black/70"
-                    >
-                      {t}
-                    </span>
-                  ))}
-                </div>
-
-                <a
-                  href={p.link}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="mt-4 inline-block text-sm font-medium text-black/80 underline-offset-4 hover:underline"
-                >
-                  View project →
-                </a>
-              </div>
-            </article>
+            <ProjectCard key={p.title} project={p} />
           ))}
         </div>
       </section>
