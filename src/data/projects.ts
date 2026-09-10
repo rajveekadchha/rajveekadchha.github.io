@@ -1,7 +1,4 @@
 import dashboard from "../assets/dashboard.png";
-import price from "../assets/price.png";
-import match from "../assets/match.png";
-import weather from "../assets/weather.png";
 import food from "../assets/food-app.png";
 import fleet from "../assets/fleet.png";
 import coffee from "../assets/Coffee.png";
@@ -83,29 +80,4 @@ export const projects: Project[] = [
     link: "https://dashboard-demo-rajvee.netlify.app/",
     image: dashboard,
   },
-  {
-    title: "Price Bundle App",
-    description:
-      "A skeleton e-commerce bundle app layout. This type of pricing bundle increases items per order by nudging customers to buy more together.",
-    technologies: ["HTML", "CSS", "JavaScript"],
-    link: "https://rajveekadchha.github.io/price-bundle/",
-    image: price,
-  },
-  {
-    title: "Card Matching App",
-    description:
-      "A card matching game designed for kids, using fruit cards and alphabet matching to support early learning through play.",
-    technologies: ["React", "Ant Design"],
-    link: "https://github.com/rajveekadchha/matching-game",
-    image: match,
-  },
-  {
-    title: "Weather App",
-    description:
-      "A weather application that shows a 7-day forecast. Users can search any city and view temperature, humidity, and wind speed.",
-    technologies: ["React", "Material UI", "TypeScript"],
-    link: "https://github.com/rajveekadchha/weather-app",
-    image: weather,
-  },
-  
 ];
