@@ -6,6 +6,7 @@ import cycle from "../assets/cycle.png";
 import photographyInvoice from "../assets/photographyInvoice.png";
 import collabTracker from "../assets/collab-tracker.png";
 import squadifier from "../assets/squadifier.png";
+import goldenGroup from "../assets/goldengroup.png";
 
 export type Project = {
   title: string;
@@ -16,6 +17,14 @@ export type Project = {
 };
 
 export const projects: Project[] = [
+  {
+  title: "Golden Group",
+  description:
+    "Marketing website for Golden Group, a Surat, Gujarat-based real estate developer with 22+ completed residential, commercial, and industrial projects. Built as a client project at The Summer Design, focused on storytelling and on-brand visuals across their project listings.",
+  technologies: ["WordPress", "Divi"],
+  link: "https://www.goldengroup.net.in/",
+  image: goldenGroup,
+},
   {
   title: "Squadifier",
   description:
