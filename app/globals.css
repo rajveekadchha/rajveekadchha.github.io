@@ -1,0 +1,78 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+ * Theme tokens. Dark is the default; light is opt-in through the toggle
+ * (stored in localStorage, applied before paint by the script in layout.tsx).
+ */
+:root,
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #0b0b0c;
+  --surface: #0b0b0c;
+  --ink: #f2efe8;
+  --soft: rgba(242, 239, 232, 0.74);
+  --dim: rgba(242, 239, 232, 0.55);
+  --line: rgba(242, 239, 232, 0.12);
+  --line-strong: rgba(242, 239, 232, 0.2);
+  --line-hover: rgba(242, 239, 232, 0.55);
+  --card: rgba(242, 239, 232, 0.035);
+  --card-hover: rgba(242, 239, 232, 0.06);
+  --chip: rgba(242, 239, 232, 0.025);
+  --hover: rgba(242, 239, 232, 0.06);
+  --active: rgba(242, 239, 232, 0.1);
+  --btn: #f2efe8;
+  --btn-ink: #0b0b0c;
+  --btn-hover: #fff;
+  --shade: rgba(0, 0, 0, 0.6);
+  --shade-soft: rgba(0, 0, 0, 0.45);
+  --photo-bg: #161618;
+  --floor-glow: rgba(255, 255, 255, 0.045);
+  --floor-vignette: rgba(0, 0, 0, 0.55);
+  --noise: 0.05;
+  --noise-tone: 1;
+}
+
+:root[data-theme="light"] {
+  color-scheme: light;
+  --bg: #f4f2ed;
+  --surface: #f4f2ed;
+  --ink: #161514;
+  --soft: rgba(22, 21, 20, 0.74);
+  --dim: rgba(22, 21, 20, 0.55);
+  --line: rgba(22, 21, 20, 0.12);
+  --line-strong: rgba(22, 21, 20, 0.22);
+  --line-hover: rgba(22, 21, 20, 0.5);
+  --card: rgba(255, 255, 255, 0.6);
+  --card-hover: rgba(255, 255, 255, 0.95);
+  --chip: rgba(255, 255, 255, 0.55);
+  --hover: rgba(22, 21, 20, 0.05);
+  --active: rgba(22, 21, 20, 0.08);
+  --btn: #161514;
+  --btn-ink: #f4f2ed;
+  --btn-hover: #000;
+  --shade: rgba(60, 50, 40, 0.28);
+  --shade-soft: rgba(60, 50, 40, 0.16);
+  --photo-bg: #e7e3db;
+  --floor-glow: rgba(255, 255, 255, 0.7);
+  --floor-vignette: rgba(120, 105, 85, 0.16);
+  --noise: 0.045;
+  --noise-tone: 0;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+}
