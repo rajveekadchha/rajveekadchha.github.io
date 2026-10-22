@@ -9,9 +9,17 @@ import "@fontsource/gochi-hand";
 import "@fontsource/shadows-into-light";
 import "./globals.css";
 import { THEME_SCRIPT } from "@/components/ThemeToggle";
+import { HOME_LEDE } from "./[slug]/ledes";
 
-const description =
-  "Frontend developer building interfaces and overthinking tiny details so you don't have to. Portfolio of Rajvee Kadchha.";
+const description = HOME_LEDE;
+
+// Link-preview card (1200×630), made by scripts/make-og.sh from /og-card.
+const ogImage = {
+  url: "/og/home.jpg",
+  width: 1200,
+  height: 630,
+  alt: "Rajvee Kadchha, Frontend Developer. A pile of hand-labelled CDs: work, projects, about me, résumé, contact, content creation.",
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://rajveekadchha.github.io"),
@@ -22,19 +30,22 @@ export const metadata: Metadata = {
     apple: "/apple-touch-icon.png",
     other: [{ rel: "icon", url: "/android-chrome-512x512.png", sizes: "512x512", type: "image/png" }],
   },
-  // Link previews (LinkedIn, WhatsApp, X), same as the old site.
+  // Link previews (WhatsApp, iMessage, Slack, LinkedIn, X). Each disc page
+  // overrides these with its own card in app/[slug]/page.tsx.
   openGraph: {
     type: "website",
+    siteName: "Rajvee Kadchha",
+    locale: "en_IN",
     url: "/",
     title: "Rajvee Kadchha — Frontend Developer",
     description,
-    images: ["/me.jpg"],
+    images: [ogImage],
   },
   twitter: {
     card: "summary_large_image",
     title: "Rajvee Kadchha — Frontend Developer",
     description,
-    images: ["/me.jpg"],
+    images: [ogImage],
   },
 };
 
